@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Terima Kasih — Transportasi ATR 2025</title>
+  <style>
+    :root {
+      --card1:#ff9a9e;
+      --card2:#fad0c4;
+      --card3:#a1c4fd;
+      --card4:#c2e9fb;
+      --card5:#fbc2eb;
+      --card6:#a6c1ee;
+      --text:#fff;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+    body {
+      background:url('assets/background.jpg') no-repeat center center/cover;
+      color:var(--text);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      overflow-x:hidden;
+      position:relative;
+      animation: fadeIn 1.5s ease;
+    }
+
+    body::before {
+      content:'';
+      position:absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      background:rgba(0,0,0,0.6);
+      z-index:0;
+    }
+
+    header,section,footer {position:relative;z-index:1;}
+
+    header {
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    header h1 {
+      font-size:2.3rem;
+      text-shadow:0 0 15px rgba(255,255,255,0.5);
+      margin-bottom:10px;
+      animation: neonPulse 3s infinite alternate;
+    }
+
+    @keyframes neonPulse {
+      from{text-shadow:0 0 10px rgba(255,255,255,0.3);}
+      to{text-shadow:0 0 25px rgba(255,255,255,0.8);}
+    }
+
+    .cards {
+      display:grid;
+      gap:20px;
+      width:90%;
+      max-width:1100px;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    }
+
+    .card {
+      border-radius:20px;
+      padding:20px;
+      color:#fff;
+      border:1px solid rgba(255,255,255,0.2);
+      box-shadow:0 0 15px rgba(255,255,255,0.1);
+      background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.05));
+      backdrop-filter:blur(8px);
+      transition:transform .4s,box-shadow .4s;
+      position:relative;
+      overflow:hidden;
+      animation: floatUp 2s ease;
+    }
+
+    .card:hover {
+      transform:translateY(-8px) scale(1.03);
+      box-shadow:0 0 30px rgba(255,255,255,0.3);
+    }
+
+    .card::after {
+      content:'';
+      position:absolute;
+      top:-50%; left:-50%;
+      width:200%; height:200%;
+      background:conic-gradient(from 180deg,rgba(255,255,255,0.2),transparent 70%);
+      animation: rotate 10s linear infinite;
+      z-index:0;
+    }
+
+    .card h2 {margin-bottom:8px;font-size:1.3rem;position:relative;z-index:1;}
+    .card p {font-size:0.95rem;line-height:1.5;position:relative;z-index:1;}
+
+    @keyframes rotate {from{transform:rotate(0);}to{transform:rotate(360deg);}}
+    @keyframes floatUp {from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes fadeIn {from{opacity:0;}to{opacity:1;}}
+
+    footer {
+      margin-top:40px;
+      text-align:center;
+      font-size:0.9rem;
+      opacity:0.9;
+    }
+
+    @media(min-width:992px){.cards{grid-template-columns:repeat(3,1fr);}}
+    @media(max-width:768px){.cards{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body onload="document.getElementById('bg-audio').play()">
+  <audio id="bg-audio" src="assets/music.mp3" loop preload="auto"></audio>
+
+  <header>
+    <h1>🚚 Terima Kasih, Tim Transportasi ATR 2025 🌄</h1>
+    <p>Ucapan hangat dariku untuk enam bintang terbaik tim ini.</p>
+  </header>
+
+  <section class="cards">
+    <div class="card"><h2>Rafi</h2><p>Suwun fi wes gelem nerimo tawaran dadi staff ku, masio rodok mlengse adoh teko perkiraan pertama, hehe. 
+        Semoga iki dadi pengalaman barumu seng asik, sedurunge mek dadi wong seng muncak, saiki dadi seng ngatur-ngatur. TOPP</p></div>
+    <div class="card"><h2>Hassya</h2><p>Wakadiv dadakanku iki wkwkw, Suwun yo sya wes gelem melu event iki masio pegel e keroso anyar iki pasti bagimu. 
+        Semoga awamu ga trauma munggah gunung dan tetep cinta alam. Pengganti pas aku gaono nak perintis. JOSS</p></div>
+    <div class="card"><h2>Steven</h2><p>Akhirnya ngerasain juga gunung di jawa timur wkwkw. Keren banget kamu udah ngerangkap jadi staff K2 dan medis, salut banget. 
+        Semoga kamu ngga trauma ku closerec dari dulu tipennn haha. Nanti kamu dikangenin seseorang pasti. Mantapp</p></div>
+    <div class="card"><h2>Gladis</h2><p>Yo iki cece ne transport, suwun ya dis wes membantu melancarkan event iki. Freshcare e virna iki lo sek nak aku. 
+        Semangat menjalani event seng lain, semoga pengalaman iki bisa jadi hal yang cukup berarti untukmu. Asekkk</p></div>
+    <div class="card"><h2>Safa</h2><p>Arek iki sampek akhir nandiii wkwkw. Staff goib ku, makasih udah ikut meramaikan divisi jisang dari welpart di deket b dulu sampe airstride selesai. 
+        Semoga hal-hal yang udah dilalui jadi insight yang baru. Suangarr</p></div>
+    <div class="card"><h2>Fika</h2><p>Hai kasmud kita wkkwkw. Jujur aku kaget tiba-tiba ketambahan staff baru, Makasih kemarin udah bantu mobilisasi peserta pas hari h w/ temen klop mu itu hahaha. 
+        Semoga ngga trauma sama kelakuan staff sama koormu ini. Terbaikk</p></div>
+  </section>
+
+  <footer><p>💙 Dana - Koor Jisang — Airlangga Trail Run 2025</p></footer>
+</body>
+</html>
